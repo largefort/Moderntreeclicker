@@ -1,28 +1,31 @@
-/* Add this CSS to add animations and sharpen the visuals */
+/* Basic styling and forest theme */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #90EE90; /* Light green background resembling a forest */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
 .container {
     text-align: center;
     margin-top: 20px;
 }
 
+h1 {
+    color: #228B22; /* Dark green header text */
+}
+
 .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .tree-container {
     position: relative;
-    animation: floatTree 5s infinite alternate ease-in-out;
-}
-
-@keyframes floatTree {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
 }
 
 #tree-image {
@@ -47,16 +50,6 @@
     width: 30px;
     height: 30px;
     margin-right: 5px;
-    animation: spinLumberjack 2s linear infinite;
-}
-
-@keyframes spinLumberjack {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .game-info {
@@ -65,7 +58,6 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    flex-wrap: wrap;
 }
 
 .notification {
@@ -78,4 +70,6 @@
     display: none;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
+}
+
+/* Add forest-themed styling here, such as tree and lumberjack images, and any additional background elements */
