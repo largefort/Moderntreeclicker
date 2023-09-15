@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modern Tree Clicker Empire</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Modern Tree Clicker Empire</h1>
+        <div class="game-container">
+            <div class="tree-container">
+                <img src="tree.png" alt="Tree" id="tree-image">
+                <div class="lumberjacks">
+                    <img src="lumberjack.png" alt="Lumberjack" class="lumberjack-icon" id="lumberjack-icon">
+                    <span id="lumberjack-count">0</span>
+                </div>
+            </div>
+            <div class="game-info">
+                <p>Wood: <span id="wood-count">0</span></p>
+                <button class="btn btn-primary" id="click-button">Click Tree</button>
+                <button class="btn btn-success" id="hire-button">Hire Lumberjack</button>
+            </div>
+        </div>
+        <!-- Tutorial Box -->
+        <div id="tutorial-box" class="tutorial-box">
+            <!-- Tutorial content will be displayed here -->
+        </div>
+        <!-- Notification -->
+        <div id="notification" class="notification">
+            <!-- Notification messages will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
