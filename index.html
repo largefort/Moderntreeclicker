@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
     <title>Modern Tree Clicker Empire</title>
 </head>
 <body>
@@ -23,15 +24,18 @@
                 <button class="btn btn-success" id="hire-button">Hire Lumberjack</button>
             </div>
         </div>
-        <!-- Tutorial Box -->
-        <div id="tutorial-box" class="tutorial-box">
-            <!-- Tutorial content will be displayed here -->
-        </div>
-        <!-- Notification -->
-        <div id="notification" class="notification">
-            <!-- Notification messages will be displayed here -->
-        </div>
+        <div id="tutorial-box" class="tutorial-box"></div>
+        <div id="notification" class="notification"></div>
     </div>
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => {
+                })
+                .catch((error) => {
+                });
+        }
+    </script>
 </body>
 </html>
