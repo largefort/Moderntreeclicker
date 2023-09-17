@@ -1,0 +1,16 @@
+{
+    "name": "Tree Clicker Game",
+    "short_name": "Tree Clicker",
+    "description": "A modern tree-clicking game.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#90EE90",
+    "theme_color": "#228B22",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
