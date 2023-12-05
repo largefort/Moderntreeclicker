@@ -1,7 +1,12 @@
 let woodCount = 0;
 let lumberjacks = 0;
 
-const tutorialSteps = ["Welcome to Modern Tree Clicker Empire! Click the tree to collect wood.", "Great job! You've collected your first wood. Keep clicking to gather more.", "You can spend your wood on upgrades to increase your collection rate.", "Now, you can also hire lumberjacks to automatically collect wood for you. Click 'Hire Lumberjack' to get started."];
+const tutorialSteps = [
+    "Welcome to Modern Tree Clicker Empire! Click the tree to collect wood.",
+    "Great job! You've collected your first wood. Keep clicking to gather more.",
+    "You can spend your wood on upgrades to increase your collection rate.",
+    "Now, you can also hire lumberjacks to automatically collect wood for you. Click 'Hire Lumberjack' to get started."
+];
 let currentStep = 0;
 
 function showTutorialStep() {
@@ -127,3 +132,12 @@ request.onsuccess = (event) => {
 
     updateUI();
 };
+
+// Disable pinch zoom
+function disablePinchZoom(event) {
+    if (event.touches.length > 1) {
+        event.preventDefault();
+    }
+}
+
+document.addEventListener('touchmove', disablePinchZoom, { passive: false });
